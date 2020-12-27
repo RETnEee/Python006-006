@@ -3,7 +3,6 @@ from datetime import *
 import os
 
 current_time = datetime.now().strftime('%Y-%m-%d')
-current_path = PurePath(__file__).parent
 path = r'/var/log/python-{}'.format(current_time)
 if not os.path.exists(path):
     os.mkdir(path)
